@@ -1,4 +1,4 @@
-package dev.sgp.web;
+package dev.sgp.entite;
 
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
@@ -15,6 +15,8 @@ public class Collaborateur {
 	private String photo;
 	private ZonedDateTime dateHeureCreation;
 	private Boolean actif;
+	private String intitulePoste;
+	private Departement departement;
 
 	public Collaborateur() {
 	}
@@ -116,6 +118,21 @@ public class Collaborateur {
 	public void setActif(Boolean actif) {
 		this.actif = actif;
 	}
+	
+	public String getIntitulePoste() {
+		return intitulePoste;
+	}
 
+	public void setIntitulePoste(String intitulePoste) {
+		this.intitulePoste = intitulePoste;
+	}
+
+	public Departement getDepartement() {
+		return departement;
+	}
+
+	public void setDepartement(Departement departement) {
+		this.departement = departement;
+	}
 	
 }
